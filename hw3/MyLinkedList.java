@@ -1,5 +1,3 @@
-package ru.gb.lesson3;
-
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -126,4 +124,42 @@ public class MyLinkedList {
         result.append("]");
         return result.toString();
     }
+
+    // public size(StringBuilder result) {
+    // int i=0;
+    // if (result ) {
+    // i++;
+    // }
+    // System.out.println(i);;
+    // }
+
+    public void contains() {
+        // if (value) {
+        // System.out.println("True");
+        // } else {
+        // System.out.println("False");
+        // }
+
+        // проверить наличие элемента в списке
+
+        // int indexM = myLinkedList.indexOf(value);
+
+        // if(indexM == - 1) {
+        // System.out.println("False");
+        // } else {
+        // System.out.println("True");
+        // }
+
+        for (i = 0; get(i)!=null; i++) {
+            get(i);
+            System.out.println(get(i));
+        }
+
+        // System.out.println(myLinkedList.get(0)); // 1
+        // System.out.println(myLinkedList.get(1)); // 2
+        // System.out.println(myLinkedList.get(2)); // 3
+        // System.out.println(myLinkedList.get(3)); // 4
+
+    }
+
 }
