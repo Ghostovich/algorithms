@@ -23,13 +23,21 @@ public class MyLinkedList {
 
     private Node head;
 
-    public void add(int value) {
+    public int add(int value) {
+        int count = 0;
         if (head == null) {
             head = new Node(value);
+            count += 1;
         } else {
             Node last = findLast();
             last.next = new Node(value);
+            count += 1;
         }
+        return count;
+    }
+
+    public void size(int count) {
+        System.out.println(count);
     }
 
     public int getFirst() {
@@ -125,14 +133,6 @@ public class MyLinkedList {
         return result.toString();
     }
 
-    // public size(StringBuilder result) {
-    // int i=0;
-    // if (result ) {
-    // i++;
-    // }
-    // System.out.println(i);;
-    // }
-
     public void contains() {
         // if (value) {
         // System.out.println("True");
@@ -149,17 +149,6 @@ public class MyLinkedList {
         // } else {
         // System.out.println("True");
         // }
-
-        for (i = 0; get(i)!=null; i++) {
-            get(i);
-            System.out.println(get(i));
-        }
-
-        // System.out.println(myLinkedList.get(0)); // 1
-        // System.out.println(myLinkedList.get(1)); // 2
-        // System.out.println(myLinkedList.get(2)); // 3
-        // System.out.println(myLinkedList.get(3)); // 4
-
     }
 
 }

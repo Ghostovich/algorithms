@@ -30,7 +30,7 @@ public class Lesson3 {
                 myLinkedList.add(3);
                 myLinkedList.add(4);
                 System.out.println(myLinkedList);
-                // myLinkedList.size();
+                myLinkedList.size(0);
                 myLinkedList.contains();
 
                 // System.out.println(myLinkedList.get(0)); // 1
