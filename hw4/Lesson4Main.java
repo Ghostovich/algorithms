@@ -10,12 +10,8 @@ public class Lesson4Main {
 
         System.out.println("abcde".compareTo("sdscdewr"));
 
-        }
+       }
 
-    private <T extends Comparable<? super T>> void foo(T x, T y) {
-        // x < y ~ x.compareTo(y) < 0
-        // x == y ~ x.compareTo(y) == 0
-        // x > y ~ x.compareTo(y) > 0
-    }
+
 
 }
